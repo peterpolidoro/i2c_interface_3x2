@@ -1,0 +1,30 @@
+G04 Gerber job file with board parameters*
+%TF.FileFunction,JobInfo*%
+%TF.Part,SinglePCB*%
+G04 Single PCB fabrication instructions*
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-427e5ec~60~ubuntu16.04.1*%
+%TF.CreationDate,2017-09-22T15:23:26-04:00*%
+%TF.ProjectId,i2c_interface_3x2,6932635F696E746572666163655F3378,1.0*%
+%MOMM*%
+G04 Overall board parameters*
+%TJ.B.Size.X,70.714*%
+%TJ.B.Size.Y,42.139*%
+%TJ.B.LayerNum,2*%
+%TJ.B.Overall.Thickness,1.600*%
+%TJ.B.Legend.Present,Both*%
+%TJ.B.SolderMask.Present,Both*%
+G04 board design rules*
+%TJ.D.PadToPad.Out,0.025*%
+%TJ.D.PadToTrack.Out,0.025*%
+%TJ.D.TrackToTrack.Out,0.025*%
+%TJ.D.MinLineWidth.Out,0.305*%
+%TJ.D.TrackToRegion.Out,0.203*%
+%TJ.D.RegionToRegion.Out,0.203*%
+G04 Layer Structure*
+%TJ.L."Copper,L1,Top",Positive,i2c_interface_3x2-F.Cu.gtl*%
+%TJ.L."Copper,L2,Bot",Positive,i2c_interface_3x2-B.Cu.gbl*%
+%TJ.L."Legend,Bot",Positive,i2c_interface_3x2-B.SilkS.gbo*%
+%TJ.L."Legend,Top",Positive,i2c_interface_3x2-F.SilkS.gto*%
+%TJ.L."SolderMask,Bot",Negative,i2c_interface_3x2-B.Mask.gbs*%
+%TJ.L."SolderMask,Top",Negative,i2c_interface_3x2-F.Mask.gts*%
+M02*

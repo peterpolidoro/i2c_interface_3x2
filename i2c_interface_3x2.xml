@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/polidorop/git/kicad/i2c_interface_3x2/i2c_interface_3x2.sch</source>
-    <date>Thu 21 Sep 2017 12:52:56 PM EDT</date>
-    <tool>Eeschema no-vcs-found-b18601d~60~ubuntu16.04.1</tool>
+    <date>Fri 22 Sep 2017 03:25:36 PM EDT</date>
+    <tool>Eeschema no-vcs-found-427e5ec~60~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>i2c_interface_3x2</title>
