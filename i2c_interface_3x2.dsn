@@ -37,22 +37,22 @@
       (place MDB1 107315 -88900 front 0 (PN MODULAR_DEVICE_BASE_3X2_MALE))
     )
     (component i2c_interface_3x2:SM1210
-      (place C1 97790 -100965 back 0 (PN 0.1uF))
-      (place C3 109855 -81280 back 270 (PN 10uF))
-      (place R1 116840 -100965 back 0 (PN 4.7k))
+      (place C1 115570 -92075 back 180 (PN 0.1uF))
+      (place C3 101600 -88900 back 270 (PN 10uF))
+      (place R1 114300 -100965 back 0 (PN 4.7k))
     )
     (component i2c_interface_3x2:SM1210::1
-      (place C2 116840 -94615 back 180 (PN 0.1uF))
-      (place R2 102870 -100965 back 180 (PN 4.7k))
+      (place C2 115570 -85725 back 180 (PN 0.1uF))
+      (place R2 105410 -100965 back 180 (PN 4.7k))
     )
     (component i2c_interface_3x2:HEADER_02x03
-      (place P1 101600 -88900 front 0 (PN HEADER_02X03))
+      (place P1 101600 -82550 front 0 (PN HEADER_02X03))
     )
     (component i2c_interface_3x2:HEADER_02x03::1
-      (place P2 118110 -88900 front 0 (PN HEADER_02X03))
+      (place P2 101600 -95250 front 0 (PN HEADER_02X03))
     )
     (component i2c_interface_3x2:TSSOP10
-      (place U1 109855 -97790 back 0 (PN PCA9615))
+      (place U1 109855 -88900 back 0 (PN PCA9615))
     )
   )
   (library

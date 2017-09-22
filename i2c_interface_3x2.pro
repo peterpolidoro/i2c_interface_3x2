@@ -1,4 +1,4 @@
-update=Wed 04 Jan 2017 04:59:50 PM EST
+update=Fri 22 Sep 2017 11:19:05 AM EDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -71,6 +71,5 @@ LibName25=siliconi
 LibName26=opto
 LibName27=atmel
 LibName28=contrib
-LibName29=valves
-LibName30=i2c_interface_3x2
-LibName31=components
+LibName29=i2c_interface_3x2
+LibName30=components
