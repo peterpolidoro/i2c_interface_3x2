@@ -1,4 +1,4 @@
-update=Fri 22 Sep 2017 11:19:05 AM EDT
+update=Mon 08 Jan 2018 11:22:19 AM EST
 version=1
 last_client=kicad
 [cvpcb]
@@ -41,8 +41,4 @@ LabSize=60
 ERC_TestSimilarLabels=1
 [eeschema]
 version=1
-LibDir=${KILIBS}
-[eeschema/libraries]
-LibName1=power
-LibName2=i2c_interface_3x2
-LibName3=components
+LibDir=

@@ -1,35 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:i2c_interface_3x2
-LIBS:components
+EESchema Schematic File Version 4
 LIBS:i2c_interface_3x2-cache
 EELAYER 26 0
 EELAYER END
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MODULAR_DEVICE_BASE_3X2_MALE MDB1
+L i2c_interface_3x2:MODULAR_DEVICE_BASE_3X2_MALE MDB1
 U 1 1 589B6745
 P 2650 1550
 F 0 "MDB1" H 2650 2547 60  0000 C CNN
@@ -61,7 +30,7 @@ F 7 "2" H 1900 1250 60  0001 C CNN "PartCount"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR03
+L power:VDD #PWR03
 U 1 1 589B67C3
 P 1350 750
 F 0 "#PWR03" H 100 -400 50  0001 C CNN
@@ -72,7 +41,7 @@ F 3 "" H 100 -250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG02
 U 1 1 589B67D9
 P 1100 750
 F 0 "#FLG02" H -150 -175 50  0001 C CNN
@@ -85,12 +54,12 @@ $EndComp
 Wire Wire Line
 	1100 750  1100 800 
 Wire Wire Line
-	1100 800  1400 800 
+	1100 800  1350 800 
 Wire Wire Line
 	1350 750  1350 800 
 Connection ~ 1350 800 
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 589B67FE
 P 700 950
 F 0 "#PWR01" H -500 -650 50  0001 C CNN
@@ -101,7 +70,7 @@ F 3 "" H -500 -400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG01
+L power:PWR_FLAG #FLG01
 U 1 1 589B6835
 P 700 750
 F 0 "#FLG01" H -550 -175 50  0001 C CNN
@@ -112,7 +81,7 @@ F 3 "" H -550 -250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  750  700  950 
+	700  750  700  900 
 Wire Wire Line
 	700  900  1400 900 
 Connection ~ 700  900 
@@ -143,7 +112,7 @@ NoConn ~ 3900 2100
 NoConn ~ 3900 2200
 NoConn ~ 3900 2300
 $Comp
-L VEE #PWR08
+L power:VEE #PWR08
 U 1 1 589B69B5
 P 4450 800
 F 0 "#PWR08" H 200 -50 50  0001 C CNN
@@ -154,7 +123,7 @@ F 3 "" H 200 100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG03
 U 1 1 589B69CA
 P 4750 800
 F 0 "#FLG03" H 3500 -125 50  0001 C CNN
@@ -167,7 +136,7 @@ $EndComp
 Wire Wire Line
 	4750 900  4750 800 
 Wire Wire Line
-	3900 900  4750 900 
+	3900 900  4450 900 
 Wire Wire Line
 	4450 800  4450 900 
 Connection ~ 4450 900 
@@ -180,7 +149,7 @@ SCL
 Text Label 4000 1700 0    60   ~ 0
 SDA
 $Comp
-L HEADER_02X03 P2
+L i2c_interface_3x2:HEADER_02X03 P2
 U 1 1 59C16ABB
 P 5250 4150
 F 0 "P2" H 5250 4350 50  0000 C CNN
@@ -194,7 +163,7 @@ F 6 "CONN HEADER 6POS 2.54" H 5550 4750 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR011
+L power:+3V3 #PWR011
 U 1 1 59C16C51
 P 4850 1050
 F 0 "#PWR011" H 4850 900 50  0001 C CNN
@@ -205,7 +174,7 @@ F 3 "" H 4850 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 59C16C7B
 P 5150 1050
 F 0 "#FLG04" H 3900 125 50  0001 C CNN
@@ -218,12 +187,12 @@ $EndComp
 Wire Wire Line
 	5150 1100 5150 1050
 Wire Wire Line
-	3900 1100 5150 1100
+	3900 1100 4850 1100
 Wire Wire Line
 	4850 1050 4850 1100
 Connection ~ 4850 1100
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 59C16CEA
 P 6000 4250
 F 0 "#PWR015" H 4800 2650 50  0001 C CNN
@@ -234,7 +203,7 @@ F 3 "" H 4800 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCA9615 U1
+L i2c_interface_3x2:PCA9615 U1
 U 1 1 59C29120
 P 2850 3800
 F 0 "U1" H 3150 4300 60  0000 C CNN
@@ -253,7 +222,7 @@ Wire Wire Line
 	2400 3800 2300 3800
 NoConn ~ 2400 3900
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 59C2A153
 P 2850 4450
 F 0 "#PWR06" H 1650 2850 50  0001 C CNN
@@ -266,7 +235,7 @@ $EndComp
 Wire Wire Line
 	2850 4400 2850 4450
 $Comp
-L +3V3 #PWR05
+L power:+3V3 #PWR05
 U 1 1 59C2A1BE
 P 2700 3150
 F 0 "#PWR05" H 2700 3000 50  0001 C CNN
@@ -283,7 +252,7 @@ SCL
 Text Label 2300 3700 2    60   ~ 0
 SDA
 $Comp
-L VEE #PWR07
+L power:VEE #PWR07
 U 1 1 59C2A355
 P 3000 3150
 F 0 "#PWR07" H -1250 2300 50  0001 C CNN
@@ -328,7 +297,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 4250 5600 4250
 $Comp
-L VEE #PWR010
+L power:VEE #PWR010
 U 1 1 59C2B46F
 P 4500 4050
 F 0 "#PWR010" H 250 3200 50  0001 C CNN
@@ -347,7 +316,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 4150 6000 4250
 $Comp
-L HEADER_02X03 P1
+L i2c_interface_3x2:HEADER_02X03 P1
 U 1 1 59C3EBB8
 P 5250 3400
 F 0 "P1" H 5250 3600 50  0000 C CNN
@@ -361,7 +330,7 @@ F 6 "CONN HEADER 6POS 2.54" H 5550 4000 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 59C3EBBE
 P 6000 3500
 F 0 "#PWR014" H 4800 1900 50  0001 C CNN
@@ -388,7 +357,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 3500 5600 3500
 $Comp
-L VEE #PWR09
+L power:VEE #PWR09
 U 1 1 59C3EBCC
 P 4500 3300
 F 0 "#PWR09" H 250 2450 50  0001 C CNN
@@ -407,7 +376,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 3400 6000 3500
 $Comp
-L 4.7k R1
+L i2c_interface_3x2:4.7k R1
 U 1 1 59C3FA86
 P 950 3500
 F 0 "R1" H 1000 3500 40  0000 L CNN
@@ -421,7 +390,7 @@ F 6 "RES SMD 4.7K OHM 1% 1/2W 1210" V 1330 3800 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR02
+L power:+3V3 #PWR02
 U 1 1 59C3FB8D
 P 950 3200
 F 0 "#PWR02" H 950 3050 50  0001 C CNN
@@ -438,7 +407,7 @@ Wire Wire Line
 Wire Wire Line
 	950  3800 1050 3800
 $Comp
-L 4.7k R2
+L i2c_interface_3x2:4.7k R2
 U 1 1 59C3FCA3
 P 1400 3500
 F 0 "R2" H 1450 3500 40  0000 L CNN
@@ -452,7 +421,7 @@ F 6 "RES SMD 4.7K OHM 1% 1/2W 1210" V 1780 3800 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR04
+L power:+3V3 #PWR04
 U 1 1 59C3FCA9
 P 1400 3200
 F 0 "#PWR04" H 1400 3050 50  0001 C CNN
@@ -473,7 +442,7 @@ SDA
 Text Label 1500 3800 0    60   ~ 0
 SCL
 $Comp
-L 0.1uF C1
+L i2c_interface_3x2:0.1uF C1
 U 1 1 59C3FE8B
 P 5800 2100
 F 0 "C1" H 5800 2200 40  0000 L CNN
@@ -487,7 +456,7 @@ F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 6100 2500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3V3 #PWR012
+L power:+3V3 #PWR012
 U 1 1 59C3FF07
 P 5800 1850
 F 0 "#PWR012" H 5800 1700 50  0001 C CNN
@@ -498,7 +467,7 @@ F 3 "" H 5800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 59C3FF43
 P 5800 2350
 F 0 "#PWR013" H 4600 750 50  0001 C CNN
@@ -511,7 +480,7 @@ $EndComp
 Wire Wire Line
 	5800 2300 5800 2350
 $Comp
-L 0.1uF C2
+L i2c_interface_3x2:0.1uF C2
 U 1 1 59C400E3
 P 6150 2100
 F 0 "C2" H 6150 2200 40  0000 L CNN
@@ -525,7 +494,7 @@ F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 6450 2500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 59C400E9
 P 6150 2350
 F 0 "#PWR017" H 4950 750 50  0001 C CNN
@@ -538,7 +507,7 @@ $EndComp
 Wire Wire Line
 	6150 2300 6150 2350
 $Comp
-L VEE #PWR016
+L power:VEE #PWR016
 U 1 1 59C40138
 P 6150 1850
 F 0 "#PWR016" H 1900 1000 50  0001 C CNN
@@ -549,7 +518,7 @@ F 3 "" H 1900 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 10uF C3
+L i2c_interface_3x2:10uF C3
 U 1 1 59C401CF
 P 6500 2100
 F 0 "C3" H 6500 2200 40  0000 L CNN
@@ -563,7 +532,7 @@ F 6 "CAP CER 10UF 50V 10% X7S 1210" H 6800 2500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 59C40244
 P 6500 2350
 F 0 "#PWR019" H 5300 750 50  0001 C CNN
@@ -576,7 +545,7 @@ $EndComp
 Wire Wire Line
 	6500 2300 6500 2350
 $Comp
-L VEE #PWR018
+L power:VEE #PWR018
 U 1 1 59C4025D
 P 6500 1850
 F 0 "#PWR018" H 2250 1000 50  0001 C CNN
@@ -592,4 +561,12 @@ Wire Wire Line
 	6150 1850 6150 1900
 Wire Wire Line
 	6500 1850 6500 1900
+Wire Wire Line
+	1350 800  1400 800 
+Wire Wire Line
+	700  900  700  950 
+Wire Wire Line
+	4450 900  4750 900 
+Wire Wire Line
+	4850 1100 5150 1100
 $EndSCHEMATC
